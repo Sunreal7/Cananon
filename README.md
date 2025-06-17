@@ -16,7 +16,7 @@ Contribute to the presale before **July 1st, 2025** and earn exclusive rewards. 
 
 ## 🌐 Live Site
 
-[Visit Site](https://Sunreal7.github.io/cananon)
+[Visit Site](https://sunreal7.github.io/Cananon/)
 
 ## 📄 Whitepaper
 
