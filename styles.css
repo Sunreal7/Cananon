@@ -1,58 +1,47 @@
 
 body {
   margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0e0e0e;
-  color: white;
-  text-align: center;
-}
-.logo {
-  width: 120px;
-  margin-top: 10px;
+  overflow-x: hidden;
 }
 header {
-  padding: 20px;
-  background: linear-gradient(to bottom, #ff0000, #b30000);
+  text-align: center;
+  padding: 2rem;
 }
-.tagline {
-  font-size: 1.2em;
-  margin: 10px 0;
+.logo {
+  width: 160px;
+  margin-bottom: 1rem;
 }
-.cta-button {
-  background: white;
-  color: #b30000;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
+main {
+  text-align: center;
+  padding: 1rem;
 }
-.cta-button:hover {
-  background: #ffe6e6;
+.leaf-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
 }
-.hero {
-  padding: 40px 20px;
-  background: url('maplewave.svg') repeat center;
+.leaf {
+  position: absolute;
+  top: -5vh;
+  width: 25px;
+  height: 25px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cf/Maple_Leaf.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fall linear infinite;
+  opacity: 0.8;
 }
-.wallets, .about, .faq {
-  padding: 30px 20px;
-  background: #1c1c1c;
-  margin: 10px 0;
-  border-top: 2px solid red;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-footer {
-  background: #111;
-  padding: 20px;
-  font-size: 0.9em;
-}
-a {
-  color: #ff6666;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
 }
